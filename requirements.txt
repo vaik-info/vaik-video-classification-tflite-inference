@@ -1,0 +1,5 @@
+imageio>=2.31.1
+imageio-ffmpeg>=0.4.8
+Pillow>=10.0.0
+numpy>=1.25.0
+tflite-runtime>=2.12.0
