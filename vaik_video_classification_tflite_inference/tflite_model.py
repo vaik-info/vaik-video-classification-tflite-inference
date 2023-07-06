@@ -70,8 +70,8 @@ class TfliteModel:
         for index in range(pred.shape[0]):
             output_dict = {'score': pred[index][pred_index[index]].tolist(),
                            'label': [self.classes[class_index] for class_index in pred_index[index]],
-                           'start_frame': index*self.model_input_shape[1],
-                           'end_frame': min(index*self.model_input_shape[1]+self.model_input_shape[1], max_frame_index)}
+                           'start_frame': int(index*self.model_input_shape[1]),
+                           'end_frame': int(min(index*self.model_input_shape[1]+self.model_input_shape[1], max_frame_index))}
             output_dict_list.append(output_dict)
         return output_dict_list
 
