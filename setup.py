@@ -33,7 +33,7 @@ if __name__ == '__main__':
         license='MIT',
         packages=setuptools.find_packages(),
         classifiers=[
-            "Programming Language :: Python :: 3.9.17",
+            "Programming Language :: Python :: 3.8.17",
             'License :: OSI Approved :: MIT License',
             "Operating System :: OS Independent",
         ],
